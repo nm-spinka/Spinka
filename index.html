@@ -4,13 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Congregation Natzech Menachem Spinka - Home</title>
+    
+    <!-- Load Rubik font for a modern, Hebrew-compatible look -->
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    
     <!-- Load Tailwind CSS CDN for styling --><script src="https://cdn.tailwindcss.com"></script>
-    <!-- Configure Tailwind to use Inter font and define custom colors --><script>
+    <!-- Configure Tailwind to use Rubik font and define custom colors --><script>
         tailwind.config = {
             theme: {
                 extend: {
                     fontFamily: {
-                        sans: ['Inter', 'sans-serif'],
+                        // Changed font from Inter to Rubik
+                        sans: ['Rubik', 'sans-serif'],
                     },
                     colors: {
                         // Updated to match the poster's color palette
@@ -37,9 +42,16 @@
 
     <!-- Header & Navigation --><header class="sticky top-0 z-50 bg-white shadow-lg">
         <nav class="container mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center py-4">
-            <div class="text-2xl font-bold text-primary-purple flex items-center space-x-2">
-                <!-- Icon Placeholder --><svg class="w-6 h-6 text-accent-pink" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10 2a8 8 0 100 16 8 8 0 000-16zM6 9a1 1 0 000 2h8a1 1 0 100-2H6z"></path></svg>
-                <span>Natzech Menachem Spinka</span>
+            <!-- Logo and Text Block -->
+            <div class="text-primary-purple flex items-center space-x-2">
+                <!-- Icon Placeholder --><svg class="w-6 h-6 text-accent-pink flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10 2a8 8 0 100 16 8 8 0 000-16zM6 9a1 1 0 000 2h8a1 1 0 100-2H6z"></path></svg>
+                
+                <!-- Congregation Name (English and Yiddish) -->
+                <div class="flex flex-col leading-tight">
+                    <span class="text-2xl font-bold">Natzech Menachem Spinka</span>
+                    <!-- Yiddish Name: Changed text size to match the English text -->
+                    <span class="text-2xl font-bold" dir="rtl">נצח מנחם ספינקא</span>
+                </div>
             </div>
             
             <!-- Desktop Navigation Links --><div class="hidden md:flex space-x-8 items-center">
