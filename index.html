@@ -44,7 +44,7 @@
             
             <!-- Desktop Navigation Links --><div class="hidden md:flex space-x-8 items-center">
                 <a href="#home" class="text-primary-purple hover:text-accent-pink transition duration-300 font-medium">Home</a>
-                <a href="#schedule" class="text-primary-purple hover:text-accent-pink transition duration-300 font-medium">Schedule</a>
+                <a href="#zmanim" class="text-primary-purple hover:text-accent-pink transition duration-300 font-medium">Zmanim</a>
                 <a href="#contact" class="text-primary-purple hover:text-accent-pink transition duration-300 font-medium">Contact</a>
                 <!-- DONATE LINK --><a href="https://secure.cardknox.com/netzachmenachemspinka" target="_blank" class="text-primary-purple bg-accent-pink px-4 py-2 rounded-lg hover:bg-pink-300 transition duration-300 font-bold shadow-md">Donate</a>
             </div>
@@ -57,7 +57,7 @@
         <!-- Mobile Menu Dropdown --><div id="mobile-menu" class="hidden md:hidden">
             <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
                 <a href="#home" class="block px-3 py-2 rounded-md text-base font-medium text-primary-purple hover:bg-gray-50">Home</a>
-                <a href="#schedule" class="block px-3 py-2 rounded-md text-base font-medium text-primary-purple hover:bg-gray-50">Schedule</a>
+                <a href="#zmanim" class="block px-3 py-2 rounded-md text-base font-medium text-primary-purple hover:bg-gray-50">Zmanim</a>
                 <a href="#contact" class="block px-3 py-2 rounded-md text-base font-medium text-primary-purple hover:bg-gray-50">Contact</a>
                 <!-- DONATE LINK for mobile --><a href="https://secure.cardknox.com/netzachmenachemspinka" target="_blank" class="block px-3 py-2 rounded-md text-base font-bold text-primary-purple bg-accent-pink hover:bg-pink-300 shadow-md">Donate</a>
             </div>
@@ -79,17 +79,18 @@
                     <p class="text-lg text-white mb-5">
                         A warm and vibrant center for community, prayer, and learning.
                     </p>
-                    <a href="#schedule" class="inline-block px-7 py-3 bg-accent-pink text-primary-purple font-bold rounded-lg shadow-lg hover:bg-pink-300 transition duration-300">
+                    <a href="#zmanim" class="inline-block px-7 py-3 bg-accent-pink text-primary-purple font-bold rounded-lg shadow-lg hover:bg-pink-300 transition duration-300">
                         View Service Times
                     </a>
                 </div>
             </div>
         </section>
 
-        <!-- Service Schedule Section --><section id="schedule" class="py-16 bg-background-light">
+        <!-- Service Schedule Section -->
+        <section id="zmanim" class="py-16 bg-background-light">
             <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-                <h2 class="text-4xl font-bold text-center text-primary-purple mb-12">
-                    Schedule of Services
+                <h2 class="text-4xl font-bold text-center text-primary-purple mb-12" dir="rtl">
+                    זמני התפלות
                 </h2>
                 
                 <!-- Holiday Schedule Image --><div class="flex justify-center p-4">
@@ -109,40 +110,56 @@
                 </h2>
 
                 <div class="grid md:grid-cols-2 gap-12 max-w-6xl mx-auto">
-                    <!-- Contact Information --><div class="space-y-6">
-                        <div class="flex items-start space-x-4">
-                            <!-- Location Icon --><svg class="w-8 h-8 text-accent-pink flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path></svg>
-                            <div>
-                                <h3 class="text-xl font-semibold text-primary-purple">Address</h3>
-                                <p class="text-text-dark">
-                                    4 Yale Dr<br>
-                                    Monsey, NY 10952
-                                </p>
+                    <!-- Contact Information & Map Container (Left Column) -->
+                    <div>
+                        <!-- Contact Information -->
+                        <div class="space-y-6">
+                            <div class="flex items-start space-x-4">
+                                <!-- Location Icon --><svg class="w-8 h-8 text-accent-pink flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path></svg>
+                                <div>
+                                    <h3 class="text-xl font-semibold text-primary-purple">Address</h3>
+                                    <p class="text-text-dark">
+                                        4 Yale Dr<br>
+                                        Monsey, NY 10952
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start space-x-4">
+                                <!-- Phone Icon --><svg class="w-8 h-8 text-accent-pink flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 2.193a1 1 0 01-.18 1.01l-1.499 1.499a12.01 12.01 0 003.882 3.882l1.499-1.499a1 1 0 011.01-.18l2.193.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path></svg>
+                                <div>
+                                    <h3 class="text-xl font-semibold text-primary-purple">Phone</h3>
+                                    <p class="text-text-dark">845-425-3081</p>
+                                </div>
+                            </div>
+                            
+                            <!-- Email Contact Block --><div class="flex items-start space-x-4">
+                                <!-- Email Icon --><svg class="w-8 h-8 text-accent-pink flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path></svg>
+                                <div>
+                                    <h3 class="text-xl font-semibold text-primary-purple">Email</h3>
+                                    <p class="text-text-dark">
+                                        <a href="mailto:nmspinka4@gmail.com" class="hover:text-primary-purple transition duration-300">nmspinka4@gmail.com</a>
+                                    </p>
+                                </div>
                             </div>
                         </div>
 
-                        <div class="flex items-start space-x-4">
-                            <!-- Phone Icon --><svg class="w-8 h-8 text-accent-pink flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 2.193a1 1 0 01-.18 1.01l-1.499 1.499a12.01 12.01 0 003.882 3.882l1.499-1.499a1 1 0 011.01-.18l2.193.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path></svg>
-                            <div>
-                                <h3 class="text-xl font-semibold text-primary-purple">Phone</h3>
-                                <p class="text-text-dark">845-425-3081</p>
-                            </div>
+                        <!-- Embedded Google Map -->
+                        <h3 class="text-2xl font-bold text-primary-purple mt-10 mb-4">Our Location</h3>
+                        <div class="relative w-full h-80 rounded-xl overflow-hidden shadow-xl">
+                            <iframe 
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3000.122699317511!2d-74.03264428456885!3d41.11899177928811!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2c62c9c78b871%3A0x9a84f501168f14f2!2s4%20Yale%20Dr%2C%20Monsey%2C%20NY%2010952%2C%20USA!5e0!3m2!1sen!2s!4v1628170000000!5m2!1sen!2s" 
+                                width="100%" 
+                                height="100%" 
+                                style="border:0;" 
+                                allowfullscreen="" 
+                                loading="lazy"
+                            ></iframe>
                         </div>
-                        
-                        <!-- New Email Contact Block --><div class="flex items-start space-x-4">
-                            <!-- Email Icon --><svg class="w-8 h-8 text-accent-pink flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path></svg>
-                            <div>
-                                <h3 class="text-xl font-semibold text-primary-purple">Email</h3>
-                                <p class="text-text-dark">
-                                    <a href="mailto:nmspinka4@gmail.com" class="hover:text-primary-purple transition duration-300">nmspinka4@gmail.com</a>
-                                </p>
-                            </div>
-                        </div>
-                        
-                        <!-- The email contact block remains removed --></div>
+                    </div>
 
-                    <!-- Contact Form (Placeholder) -->
-                    <div class="bg-background-light p-8 rounded-xl shadow-lg">
+                    <!-- Contact Form (Right Column) -->
+                    <div class="bg-background-light p-8 rounded-xl shadow-lg h-fit">
                         <h3 class="text-2xl font-bold text-primary-purple mb-6">Send Us a Message</h3>
                         <!-- Form now uses JavaScript to construct a mailto link on submission -->
                         <form id="contactForm" onsubmit="sendEmail(event)" class="space-y-4">
