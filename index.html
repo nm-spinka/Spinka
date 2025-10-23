@@ -5,24 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Congregation Natzech Menachem Spinka - Home</title>
     
-    <!-- Load Rubik font for a modern, Hebrew-compatible look -->
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <!-- Load Rubik (Latin/Default) and Assistant (Hebrew/Yiddish - chosen for high legibility) fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
     
     <!-- Load Tailwind CSS CDN for styling --><script src="https://cdn.tailwindcss.com"></script>
-    <!-- Configure Tailwind to use Rubik font and define custom colors --><script>
+    <!-- Configure Tailwind to use Rubik as default and define Assistant for Hebrew -->
+    <script>
         tailwind.config = {
             theme: {
                 extend: {
                     fontFamily: {
-                        // Changed font from Inter to Rubik
+                        // Default font for English/Latin text
                         sans: ['Rubik', 'sans-serif'],
+                        // New font for Hebrew/Yiddish text, matching the traditional style. Changed from Frank Ruhl Libre to Assistant.
+                        hebrew: ['Assistant', 'sans-serif'],
                     },
                     colors: {
-                        // Updated to match the poster's color palette
-                        'primary-purple': '#6B21A8', // Dark purple from the poster text/main elements
-                        'accent-pink': '#FBCFE8',  // Lighter pink from the poster accent (e.g., card background)
-                        'background-light': '#FAE8FA', // Very light pink background from the poster
-                        'text-dark': '#4A004A', // A dark purple for headings and main text
+                        'primary-purple': '#6B21A8',
+                        'accent-pink': '#FBCFE8',
+                        'background-light': '#FAE8FA',
+                        'text-dark': '#4A004A',
                     }
                 }
             }
@@ -31,7 +33,7 @@
     <!-- Custom style to ensure smooth scrolling and responsive hero height --><style>
         html { scroll-behavior: smooth; }
         .hero-bg {
-            background-color: #FAE8FA; /* Use the light pink background */
+            background-color: #FAE8FA;
             background-size: cover;
             background-position: center;
         }
@@ -46,11 +48,11 @@
             <div class="text-primary-purple flex items-center space-x-2">
                 <!-- Icon Placeholder --><svg class="w-6 h-6 text-accent-pink flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10 2a8 8 0 100 16 8 8 0 000-16zM6 9a1 1 0 000 2h8a1 1 0 100-2H6z"></path></svg>
                 
-                <!-- Congregation Name (English and Yiddish) -->
+                <!-- Congregation Name (English and Yiddish) - UPDATED -->
                 <div class="flex flex-col leading-tight">
-                    <span class="text-2xl font-bold">Natzech Menachem Spinka</span>
-                    <!-- Yiddish Name: Same size as English text -->
-                    <span class="text-2xl font-bold" dir="rtl">נצח מנחם ספינקא</span>
+                    <span class="text-2xl font-bold">Congregation Natzech Menachem Spinka</span>
+                    <!-- Yiddish Name: Applied font-hebrew class -->
+                    <span class="text-2xl font-bold font-hebrew" dir="rtl">בית מדרש נצח מנחם ספינקא</span>
                 </div>
             </div>
             
@@ -86,16 +88,16 @@
                     class="mx-auto w-full max-w-2xl h-auto rounded-lg shadow-xl"
                 >
                 <div class="mt-8 bg-primary-purple bg-opacity-80 p-6 rounded-xl shadow-2xl">
-                    <!-- Title: Changed to B'ruchim Haba'im (Hebrew) -->
-                    <h1 class="text-3xl sm:text-4xl font-extrabold text-white mb-3" dir="rtl">
+                    <!-- Title: Applied font-hebrew class -->
+                    <h1 class="text-3xl sm:text-4xl font-extrabold text-white mb-3 font-hebrew" dir="rtl">
                         ברוכים הבאים
                     </h1>
-                    <!-- Sub-text: CHANGED to "בית המדרש נצח מנחם ספינקא" -->
-                    <p class="text-lg text-white mb-5 font-bold" dir="rtl">
+                    <!-- Sub-text: Applied font-hebrew class -->
+                    <p class="text-lg text-white mb-5 font-bold font-hebrew" dir="rtl">
                         בית המדרש נצח מנחם ספינקא
                     </p>
-                    <!-- Button: Removed bold formatting (**) around 'דרוקט דא' -->
-                    <a href="https://secure.cardknox.com/netzachmenachemspinka" target="_blank" class="inline-block px-7 py-3 bg-accent-pink text-primary-purple font-bold rounded-lg shadow-lg hover:bg-pink-300 transition duration-300" dir="rtl">
+                    <!-- Button: Applied font-hebrew class -->
+                    <a href="https://secure.cardknox.com/netzachmenachemspinka" target="_blank" class="inline-block px-7 py-3 bg-accent-pink text-primary-purple font-bold rounded-lg shadow-lg hover:bg-pink-300 transition duration-300 font-hebrew" dir="rtl">
                         צו מנדב זיין פארן שול אדער צו באצלן נדרים ונדבות דרוקט דא
                     </a>
                 </div>
@@ -105,17 +107,18 @@
         <!-- Service Schedule Section -->
         <section id="zmanim" class="py-16 bg-background-light">
             <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-                <h2 class="text-4xl font-bold text-center text-primary-purple mb-12" dir="rtl">
+                <!-- Zmanim Header: Applied font-hebrew class -->
+                <h2 class="text-4xl font-bold text-center text-primary-purple mb-12 font-hebrew" dir="rtl">
                     זמני התפלות
                 </h2>
                 
-                <!-- Holiday Schedule Image -->
-                <div class="flex justify-center p-4">
-                    <!-- REPLACED IMAGE SOURCE TO THE NEW UPLOADED IMAGE (image000000.jpg) -->
+                <!-- Zmanim Content Container (Centering the remaining image) -->
+                <div class="flex justify-center max-w-6xl mx-auto">
+                    <!-- Zmanim Image (Centered) -->
                     <img 
                         src="image000000.jpg" 
                         alt="Daily Zmanim Schedule - Shachris, Mincha, Maariv - for Summer and Winter" 
-                        class="w-full max-w-3xl rounded-xl shadow-2xl"
+                        class="w-full max-w-md rounded-xl shadow-2xl"
                     >
                 </div>
             </div>
@@ -216,9 +219,36 @@
         </div>
     </footer>
 
-    <!-- JavaScript for Mobile Menu, Footer Year, and Email Submission -->
-    <script>
+    <!-- JavaScript for Mobile Menu, Footer Year, Email Submission -->
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-app.js";
+        import { getAuth, signInAnonymously, signInWithCustomToken } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-auth.js";
+        
+        // --- Firebase Setup (Required for Canvas Auth Token) ---
+        const appId = typeof __app_id !== 'undefined' ? __app_id : 'default-app-id';
+        const firebaseConfig = typeof __firebase_config !== 'undefined' ? JSON.parse(__firebase_config) : {};
+        const initialAuthToken = typeof __initial_auth_token !== 'undefined' ? __initial_auth_token : null;
+        
+        let db, auth;
+
+        // --- Standard Initialization ---
         document.addEventListener('DOMContentLoaded', () => {
+            // Initialize Firebase App and Auth
+            if (Object.keys(firebaseConfig).length > 0) {
+                const app = initializeApp(firebaseConfig);
+                auth = getAuth(app);
+                // Sign in with the provided token or anonymously
+                if (initialAuthToken) {
+                    signInWithCustomToken(auth, initialAuthToken)
+                        .catch((error) => console.error("Firebase Custom Token Sign-In Failed:", error));
+                } else {
+                    signInAnonymously(auth)
+                        .catch((error) => console.error("Firebase Anonymous Sign-In Failed:", error));
+                }
+            } else {
+                console.warn("Firebase configuration is missing. API calls requiring authentication may fail.");
+            }
+
             // Mobile Menu Toggle
             const button = document.getElementById('mobile-menu-button');
             const menu = document.getElementById('mobile-menu');
@@ -238,7 +268,7 @@
         });
 
         // Function to handle email submission using mailto:
-        function sendEmail(event) {
+        window.sendEmail = function(event) {
             event.preventDefault(); // Stop the default form submission
 
             const form = document.getElementById('contactForm');
@@ -247,23 +277,15 @@
             const message = form.message.value;
 
             const recipient = 'nmspinka4@gmail.com';
-            // Encode the subject line
             const subject = encodeURIComponent(`Message from ${name} via Website Contact Form`);
-
-            // Construct the email body with clear labels, using %0A for newlines
             const body = encodeURIComponent(
                 `Name: ${name}\n` +
                 `Email: ${email}\n\n` +
                 `Message:\n${message}`
             );
 
-            // Construct the mailto URI
             const mailtoLink = `mailto:${recipient}?subject=${subject}&body=${body}`;
-
-            // Open the user's email client
             window.location.href = mailtoLink;
-
-            // Optional: clear the form after attempting to open mail client
             form.reset();
         }
     </script>
