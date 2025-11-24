@@ -35,6 +35,11 @@
             background-size: cover;
             background-position: center;
         }
+        /* Custom class for the big Cardknox card */
+        .big-donate-card {
+            background-color: #FBCFE8; /* Accent Pink */
+            border-color: #6B21A8; /* Primary Purple */
+        }
     </style>
 </head>
 
@@ -101,16 +106,25 @@
                     Support Our Shul
                 </h2>
                 
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto text-center">
-                    
-                    <div class="p-6 border-2 border-primary-purple rounded-xl shadow-lg hover:shadow-xl transition duration-300 bg-background-light">
-                        <h3 class="text-xl font-semibold text-primary-purple mb-4">Credit Card / Debit (Cardknox)</h3>
-                        <p class="mb-4 text-sm text-text-dark">Quick and secure online payment.</p>
-                        <a href="https://secure.cardknox.com/netzachmenachemspinka" target="_blank" class="inline-block w-full py-3 px-6 bg-primary-purple text-white font-bold rounded-lg shadow-md hover:bg-primary-purple/90 transition duration-300">
-                            Donate with Credit Card
-                        </a>
-                    </div>
+                <div class="max-w-xl mx-auto mb-12 p-8 border-4 border-primary-purple rounded-xl shadow-2xl transition duration-300 big-donate-card">
+                    <h3 class="text-3xl font-extrabold text-primary-purple mb-4">
+                        Donate with Credit Card (Cardknox)
+                    </h3>
+                    <p class="mb-6 text-lg text-text-dark font-semibold">
+                        This is our primary, quick, and secure online donation method.
+                    </p>
+                    <a href="https://secure.cardknox.com/netzachmenachemspinka" target="_blank" class="inline-block w-full py-4 px-6 bg-primary-purple text-white text-xl font-bold rounded-lg shadow-xl hover:bg-primary-purple/90 transition duration-300">
+                        Proceed to Cardknox Donation
+                    </a>
+                </div>
 
+
+                <h3 class="text-2xl font-bold text-center text-primary-purple mb-8 border-b-2 border-accent-pink pb-2 max-w-4xl mx-auto">
+                    Other Donation Options
+                </h3>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto text-center">
+                    
                     <div class="p-6 border-2 border-primary-purple rounded-xl shadow-lg hover:shadow-xl transition duration-300 bg-background-light">
                         <h3 class="text-xl font-semibold text-primary-purple mb-4">Pledger</h3>
                         <p class="mb-4 text-sm text-text-dark">Donate with Pledger for easy, no-fee giving.</p>
@@ -127,7 +141,15 @@
                         </a>
                     </div>
                     
-                    <div class="p-6 border-2 border-dashed border-accent-pink rounded-xl shadow-lg bg-background-light col-span-1 md:col-span-1 lg:col-span-1">
+                    <div class="p-6 border-2 border-primary-purple rounded-xl shadow-lg hover:shadow-xl transition duration-300 bg-background-light">
+                        <h3 class="text-xl font-semibold text-primary-purple mb-4">By Email</h3>
+                        <p class="mb-4 text-sm text-text-dark">Send an email to discuss alternative donation methods.</p>
+                        <a href="mailto:nmspinka4@gmail.com" class="inline-block w-full py-3 px-6 bg-primary-purple text-white font-bold rounded-lg shadow-md hover:bg-primary-purple/90 transition duration-300">
+                            Contact for Donation
+                        </a>
+                    </div>
+
+                    <div class="p-6 border-2 border-dashed border-accent-pink rounded-xl shadow-lg bg-background-light">
                         <h3 class="text-xl font-semibold text-text-dark mb-4">OJC Donation (Coming Soon)</h3>
                         <p class="mb-4 text-sm text-text-dark">The link for OJC donations will be added shortly. Thank you for your support.</p>
                         <button disabled class="inline-block w-full py-3 px-6 bg-gray-400 text-white font-bold rounded-lg shadow-md cursor-not-allowed">
@@ -135,12 +157,12 @@
                         </button>
                     </div>
 
-                    <div class="p-6 border-2 border-primary-purple rounded-xl shadow-lg hover:shadow-xl transition duration-300 bg-background-light">
-                        <h3 class="text-xl font-semibold text-primary-purple mb-4">By Email</h3>
-                        <p class="mb-4 text-sm text-text-dark">Send an email to discuss alternative donation methods.</p>
-                        <a href="mailto:nmspinka4@gmail.com" class="inline-block w-full py-3 px-6 bg-primary-purple text-white font-bold rounded-lg shadow-md hover:bg-primary-purple/90 transition duration-300">
-                            Contact for Donation
-                        </a>
+                    <div class="p-6 border-2 border-dashed border-accent-pink rounded-xl shadow-lg bg-background-light">
+                        <h3 class="text-xl font-semibold text-text-dark mb-4">Donors Fund (Placeholder)</h3>
+                        <p class="mb-4 text-sm text-text-dark">Information for the Donors Fund is pending and will be updated soon.</p>
+                        <button disabled class="inline-block w-full py-3 px-6 bg-gray-400 text-white font-bold rounded-lg shadow-md cursor-not-allowed">
+                            Fund Link Pending
+                        </button>
                     </div>
                     
                 </div>
